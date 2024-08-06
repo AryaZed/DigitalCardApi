@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Web.Api", "DigitalCardApi\src\API\CleanArc.Web.Api\CleanArc.Web.Api.csproj", "{34E17388-DB44-4C59-82A3-CDC516C5BE4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.WebFramework", "DigitalCardApi\src\API\CleanArc.WebFramework\CleanArc.WebFramework.csproj", "{D077150F-F556-4783-8600-A097F3589BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Web.Plugins.Grpc", "DigitalCardApi\src\API\Plugins\CleanArc.Web.Plugins.Grpc\CleanArc.Web.Plugins.Grpc.csproj", "{1A9A8B53-3B07-4652-9DBA-B375A061E924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Application", "DigitalCardApi\src\Core\CleanArc.Application\CleanArc.Application.csproj", "{2497E4E0-256A-4515-A2EF-ABDE8394BC02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Domain", "DigitalCardApi\src\Core\CleanArc.Domain\CleanArc.Domain.csproj", "{30BE3876-5139-4B19-B14D-EB0788B3EF02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Infrastructure.CrossCutting", "DigitalCardApi\src\Infrastructure\CleanArc.Infrastructure.CrossCutting\CleanArc.Infrastructure.CrossCutting.csproj", "{69F8F1C9-C33E-4B7A-A0DA-EF44806A223B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Infrastructure.Identity", "DigitalCardApi\src\Infrastructure\CleanArc.Infrastructure.Identity\CleanArc.Infrastructure.Identity.csproj", "{FACDED7A-7A2D-4103-B765-895D06EEBD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Infrastructure.Persistence", "DigitalCardApi\src\Infrastructure\CleanArc.Infrastructure.Persistence\CleanArc.Infrastructure.Persistence.csproj", "{8DDDF5D1-BB3A-4F07-82AD-2699C06F56EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.SharedKernel", "DigitalCardApi\src\Shared\CleanArc.SharedKernel\CleanArc.SharedKernel.csproj", "{204A6F53-13A8-43BD-8C7B-ECA8156FC8C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Test.Infrastructure.Identity", "DigitalCardApi\src\Tests\CleanArc.Test.Infrastructure.Identity\CleanArc.Test.Infrastructure.Identity\CleanArc.Test.Infrastructure.Identity.csproj", "{1975CEC7-FFFE-4446-A68C-F998EB819E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Tests.Setup", "DigitalCardApi\src\Tests\CleanArc.Tests.Setup\CleanArc.Tests.Setup.csproj", "{17143E7B-90A3-4DAE-B3BA-738088D219DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34E17388-DB44-4C59-82A3-CDC516C5BE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E17388-DB44-4C59-82A3-CDC516C5BE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E17388-DB44-4C59-82A3-CDC516C5BE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E17388-DB44-4C59-82A3-CDC516C5BE4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D077150F-F556-4783-8600-A097F3589BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D077150F-F556-4783-8600-A097F3589BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D077150F-F556-4783-8600-A097F3589BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D077150F-F556-4783-8600-A097F3589BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9A8B53-3B07-4652-9DBA-B375A061E924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9A8B53-3B07-4652-9DBA-B375A061E924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9A8B53-3B07-4652-9DBA-B375A061E924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9A8B53-3B07-4652-9DBA-B375A061E924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2497E4E0-256A-4515-A2EF-ABDE8394BC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2497E4E0-256A-4515-A2EF-ABDE8394BC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2497E4E0-256A-4515-A2EF-ABDE8394BC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2497E4E0-256A-4515-A2EF-ABDE8394BC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30BE3876-5139-4B19-B14D-EB0788B3EF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BE3876-5139-4B19-B14D-EB0788B3EF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BE3876-5139-4B19-B14D-EB0788B3EF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BE3876-5139-4B19-B14D-EB0788B3EF02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F8F1C9-C33E-4B7A-A0DA-EF44806A223B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F8F1C9-C33E-4B7A-A0DA-EF44806A223B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F8F1C9-C33E-4B7A-A0DA-EF44806A223B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F8F1C9-C33E-4B7A-A0DA-EF44806A223B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACDED7A-7A2D-4103-B765-895D06EEBD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACDED7A-7A2D-4103-B765-895D06EEBD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACDED7A-7A2D-4103-B765-895D06EEBD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACDED7A-7A2D-4103-B765-895D06EEBD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDDF5D1-BB3A-4F07-82AD-2699C06F56EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDDF5D1-BB3A-4F07-82AD-2699C06F56EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDDF5D1-BB3A-4F07-82AD-2699C06F56EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDDF5D1-BB3A-4F07-82AD-2699C06F56EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204A6F53-13A8-43BD-8C7B-ECA8156FC8C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204A6F53-13A8-43BD-8C7B-ECA8156FC8C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204A6F53-13A8-43BD-8C7B-ECA8156FC8C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204A6F53-13A8-43BD-8C7B-ECA8156FC8C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1975CEC7-FFFE-4446-A68C-F998EB819E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1975CEC7-FFFE-4446-A68C-F998EB819E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1975CEC7-FFFE-4446-A68C-F998EB819E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1975CEC7-FFFE-4446-A68C-F998EB819E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17143E7B-90A3-4DAE-B3BA-738088D219DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17143E7B-90A3-4DAE-B3BA-738088D219DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17143E7B-90A3-4DAE-B3BA-738088D219DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17143E7B-90A3-4DAE-B3BA-738088D219DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A886529-A08A-47C0-9EE0-E5DD07138A8B}
+	EndGlobalSection
+EndGlobal
