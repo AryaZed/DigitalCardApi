@@ -94,6 +94,8 @@ app.UseSwaggerAndUI();
 app.MapCarter();
 app.UseRouting();
 
+app.UseCors("AllowAllOrigins");
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

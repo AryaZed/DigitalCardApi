@@ -27,7 +27,7 @@ namespace CleanArc.Web.Api.Controllers.V1.Admin
         [HttpGet("OrderList")]
         public async Task<IActionResult> GetOrders()
         {
-            var queryResult = await _sender.Send(new GetAllOrdersQuery());
+            var queryResult = await _sender.Send(new Application.Features.Card.Queries.GetAllCards.GetAllCardsQuery());
 
             return base.OperationResult(queryResult);
         }

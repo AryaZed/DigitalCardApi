@@ -8,12 +8,14 @@ namespace CleanArc.Infrastructure.Persistence.Repositories.Common
 
         public IUserRefreshTokenRepository UserRefreshTokenRepository { get; }
         public IOrderRepository OrderRepository { get; }
+        public ICardRepository CardRepository { get; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             UserRefreshTokenRepository = new UserRefreshTokenRepository(_db);
             OrderRepository = new OrderRepository(_db);
+            CardRepository = new CardRepository(_db);
         }
 
         public Task CommitAsync()

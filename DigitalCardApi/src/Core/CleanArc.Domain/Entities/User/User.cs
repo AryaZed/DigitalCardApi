@@ -1,4 +1,5 @@
 ﻿using CleanArc.Domain.Common;
+using CleanArc.Domain.Entities.Card;
 using Microsoft.AspNetCore.Identity;
 
 namespace CleanArc.Domain.Entities.User
@@ -23,6 +24,7 @@ namespace CleanArc.Domain.Entities.User
         #region Navigation Properties
 
         public IList<Order.Order> Orders { get; set; }
+        public IList<BusinessCard> BusinessCards { get; set; }
 
         #endregion
 

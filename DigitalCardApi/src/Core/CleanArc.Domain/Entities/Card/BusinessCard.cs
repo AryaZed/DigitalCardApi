@@ -13,9 +13,14 @@ namespace CleanArc.Domain.Entities.Card
         public string Address { get; set; }
         public string Website { get; set; }
         public string ProfileImageUrl { get; set; }
-        public SocialMediaLinks SocialMediaLinks { get; set; }
-        public ContactOptions ContactOptions { get; set; }
-        public List<CustomField> CustomFields { get; set; }
-        public string UserId { get; set; }  // New field for UserId
+        public bool IsDeleted { get; set; }
+
+        public User.User User { get; set; }
+        public int UserId { get; set; }
+
+        public IList<SocialMediaLinks> SocialMediaLinks { get; set; }
+        public IList<ContactOptions> ContactOptions { get; set; }
+        public IList<CustomField> CustomFields { get; set; }
+
     }
 }

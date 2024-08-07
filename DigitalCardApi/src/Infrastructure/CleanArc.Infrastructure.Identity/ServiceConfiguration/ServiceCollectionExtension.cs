@@ -90,6 +90,17 @@ namespace CleanArc.Infrastructure.Identity.ServiceConfiguration
 
             //services.AddScoped<IPersonalDataProtector, PersonalDataProtector>();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyHeader()
+                               .AllowAnyMethod();
+                    });
+            });
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy(ConstantPolicies.DynamicPermission, policy =>
