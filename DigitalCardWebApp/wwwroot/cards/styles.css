@@ -1,85 +1,165 @@
-﻿body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+﻿/* Font Faces */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-header, footer {
-    background-color: #333;
+header {
+    background-color: #007bff;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-main {
-    padding: 2rem 0;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #333;
-}
-
-.form-section, .cards-section {
-    margin: 2rem 0;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-    form label {
-        display: block;
-        margin-bottom: 0.5rem;
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
     }
 
-    form input {
-        flex: 1 1 48%;
-        padding: 0.5rem;
-        margin-bottom: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
+/* Main Sections */
+.form-section,
+.cards-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    .form-section h2,
+    .cards-section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #007bff;
     }
 
-button {
-    flex: 1 1 100%;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+.form-group label {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+    .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    }
+
+.form-check-label {
+    margin-right: 10px;
+}
+
+/* Buttons */
+#addCustomField {
+    background-color: #6c757d;
     border: none;
-    cursor: pointer;
-    border-radius: 4px;
+    color: #fff;
 }
 
-    button:hover {
-        background-color: #555;
+    #addCustomField:hover {
+        background-color: #5a6268;
     }
 
-#cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s;
 }
 
-.card {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    flex: 1 1 30%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 4px;
+    .card:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+        max-width: 100px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .card p {
+        margin: 0;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .card a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 40px;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .form-section,
+    .cards-section {
+        padding: 20px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
 }

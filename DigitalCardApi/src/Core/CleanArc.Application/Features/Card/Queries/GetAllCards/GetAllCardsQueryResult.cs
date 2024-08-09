@@ -15,8 +15,8 @@ namespace CleanArc.Application.Features.Card.Queries.GetAllCards
     string ProfileImageUrl,
     int UserId,
     string UserName,
-    IList<SocialMediaLinks> SocialMediaLinks,
-    IList<ContactOptions> ContactOptions,
-    IList<CustomField> CustomFields
+    ICollection<SocialMediaLinks> SocialMediaLinks,
+    ICollection<ContactOptions> ContactOptions,
+    ICollection<CustomField> CustomFields
 );
 }

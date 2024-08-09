@@ -4,55 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Business Card</title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../cards/styles.css">
 </head>
 <body>
     <header>
         <h1>Digital Business Card</h1>
     </header>
-    <main>
+    <main class="container mt-4">
         <section class="form-section">
             <h2>Create a New Business Card</h2>
             <form id="cardForm" aria-label="Create a New Business Card">
+                <!-- Basic Info -->
                 <div class="form-group">
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name" required>
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name" required>
                 </div>
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" id="title" name="title" placeholder="Title" required>
+                    <input type="text" id="title" name="title" class="form-control" placeholder="Title" required>
                 </div>
                 <div class="form-group">
                     <label for="company">Company</label>
-                    <input type="text" id="company" name="company" placeholder="Company" required>
+                    <input type="text" id="company" name="company" class="form-control" placeholder="Company" required>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number</label>
-                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                    <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Phone Number" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Address" required>
+                    <input type="text" id="address" name="address" class="form-control" placeholder="Address" required>
                 </div>
                 <div class="form-group">
                     <label for="website">Website</label>
-                    <input type="url" id="website" name="website" placeholder="Website" required>
+                    <input type="url" id="website" name="website" class="form-control" placeholder="Website" required>
                 </div>
                 <div class="form-group">
                     <label for="profileImageUrl">Profile Image URL</label>
-                    <input type="url" id="profileImageUrl" name="profileImageUrl" placeholder="Profile Image URL" required>
+                    <input type="url" id="profileImageUrl" name="profileImageUrl" class="form-control" placeholder="Profile Image URL" required>
                 </div>
-                <button type="submit">Create Card</button>
+
+                <!-- Social Media Links -->
+                <h4>Social Media Links</h4>
+                <div class="form-group">
+                    <label for="linkedIn">LinkedIn</label>
+                    <input type="url" id="linkedIn" name="linkedIn" class="form-control" placeholder="LinkedIn Profile URL">
+                </div>
+                <div class="form-group">
+                    <label for="twitter">Twitter</label>
+                    <input type="url" id="twitter" name="twitter" class="form-control" placeholder="Twitter Profile URL">
+                </div>
+                <div class="form-group">
+                    <label for="facebook">Facebook</label>
+                    <input type="url" id="facebook" name="facebook" class="form-control" placeholder="Facebook Profile URL">
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="url" id="instagram" name="instagram" class="form-control" placeholder="Instagram Profile URL">
+                </div>
+                <div class="form-group">
+                    <label for="github">Github</label>
+                    <input type="url" id="github" name="github" class="form-control" placeholder="Github Profile URL">
+                </div>
+
+                <!-- Contact Options -->
+                <h4>Contact Options</h4>
+                <div class="form-group">
+                    <label>Contact Methods</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="contactPhone" name="contactPhone">
+                        <label class="form-check-label" for="contactPhone">Phone</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="contactEmail" name="contactEmail">
+                        <label class="form-check-label" for="contactEmail">Email</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="contactAddress" name="contactAddress">
+                        <label class="form-check-label" for="contactAddress">Address</label>
+                    </div>
+                </div>
+
+                <!-- Custom Fields -->
+                <h4>Custom Fields</h4>
+                <div class="form-group">
+                    <label for="customFields">Add Custom Fields</label>
+                    <div id="customFieldsContainer">
+                        <div class="custom-field mb-2">
+                            <input type="text" name="customFieldName[]" class="form-control mb-1" placeholder="Field Name">
+                            <input type="text" name="customFieldValue[]" class="form-control" placeholder="Field Value">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary mt-2" id="addCustomField">Add Another Custom Field</button>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Create Card</button>
             </form>
         </section>
+
         <section class="cards-section">
             <h2>My Business Cards</h2>
             <div id="cardsContainer" aria-live="polite"></div>
@@ -61,7 +119,6 @@
     <footer>
         <p>&copy; 2024 Digital Business Card. All rights reserved.</p>
     </footer>
-    <!--<script src="../cards/config.js"></script>-->
     <script src="../cards/scripts.js"></script>
 </body>
 </html>

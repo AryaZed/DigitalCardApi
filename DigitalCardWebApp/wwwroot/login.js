@@ -23,7 +23,7 @@
 
             if (response.ok) {
                 const result = await response.json();
-                debugger;
+
                 // Handle the token, save it to localStorage
                 localStorage.setItem('token', result.data.access_token);
                 localStorage.setItem('userId', result.data.user_id);

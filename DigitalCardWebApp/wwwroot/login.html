@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
     <link rel="stylesheet" href="cards/styles.css">
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>User Login</h1>
-    </header>
-    <main>
-        <section class="form-section">
-            <h2>Login</h2>
-            <form id="loginForm" aria-label="Admin Login">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                </div>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Digital Business Card. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>User Login</h1>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Login to Your Account</h2>
+                <form id="loginForm" aria-label="Admin Login">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div id="error-message" class="error-message"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Digital Business Card. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="login.js"></script>
 </body>
 </html>

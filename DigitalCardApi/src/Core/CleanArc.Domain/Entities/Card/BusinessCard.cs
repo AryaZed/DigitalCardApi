@@ -18,9 +18,9 @@ namespace CleanArc.Domain.Entities.Card
         public User.User User { get; set; }
         public int UserId { get; set; }
 
-        public IList<SocialMediaLinks> SocialMediaLinks { get; set; }
-        public IList<ContactOptions> ContactOptions { get; set; }
-        public IList<CustomField> CustomFields { get; set; }
+        public virtual ICollection<SocialMediaLinks> SocialMediaLinks { get; set; }
+        public virtual ICollection<ContactOptions> ContactOptions { get; set; }
+        public virtual ICollection<CustomField> CustomFields { get; set; }
 
     }
 }

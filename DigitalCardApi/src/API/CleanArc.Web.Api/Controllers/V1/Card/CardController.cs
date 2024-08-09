@@ -23,9 +23,9 @@ namespace CleanArc.Web.Api.Controllers.V1.Card
         }
 
         [HttpGet("GetUserCards")]
-        public async Task<IActionResult> GetUserCards()
+        public async Task<IActionResult> GetUserCards(int userId)
         {
-            var query = await sender.Send(new GetUserCardsQueryModel(UserId));
+            var query = await sender.Send(new GetUserCardsQueryModel(userId));
 
             return base.OperationResult(query);
         }

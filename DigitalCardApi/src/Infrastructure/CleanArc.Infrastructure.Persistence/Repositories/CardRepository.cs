@@ -15,7 +15,12 @@ namespace CleanArc.Infrastructure.Persistence.Repositories
 
         public async Task<List<BusinessCard>> GetAllUserCardsAsync(int userId)
         {
-            return await base.TableNoTracking.Include(i => i.User).Where(c => c.UserId == userId).ToListAsync();
+            return await base.TableNoTracking
+                .Include(i => i.User)
+                .Include(i => i.CustomFields)
+                .Include(i => i.ContactOptions)
+                .Include(i => i.SocialMediaLinks)
+                .Where(c => c.UserId == userId).ToListAsync();
         }
 
         public async Task<List<BusinessCard>> GetAllCardsWithRelatedUserAsync()
